@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: da5d252b91497984f86b916f05c43215
+guid: 37bd8a1bae53c9541a6957c6bb82a953
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -20,7 +20,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pengu_Sprites_0
+      name: Pengu_Jumping_Sprites_0
       rect:
         serializedVersion: 2
-        x: 3
+        x: 2
         y: 0
         width: 19
-        height: 24
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de1e1a6043ea2c04794494a79e6617dd
-      internalID: 36105695
+      spriteID: 0ff04ff274e654e458212597c3db4849
+      internalID: -497531510
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pengu_Sprites_1
+      name: Pengu_Jumping_Sprites_1
       rect:
         serializedVersion: 2
-        x: 28
+        x: 24
         y: 0
-        width: 21
-        height: 24
+        width: 19
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,8 +151,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 081f1a0dc0de42c40992f0bf70e2fbdd
-      internalID: -799192805
+      spriteID: af48c15a88247134fbb2120c326f676a
+      internalID: -960064950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pengu_Jumping_Sprites_2
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 0
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c38b477a08c5944aab5942ce2f863b
+      internalID: -146104583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pengu_Jumping_Sprites_3
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae54253558f5a464bb7e408fc365f8ac
+      internalID: -550763972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pengu_Jumping_Sprites_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 836edaa7064da0f42a20e5f2389fea0a
+      internalID: 409673521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pengu_Jumping_Sprites_5
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04fd9be22f0d24f46b7c22321cae226d
+      internalID: -329904563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pengu_Jumping_Sprites_6
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d65654c797a4d647b53846b8761c47d
+      internalID: 2114244216
       vertices: []
       indices: 
       edges: []
@@ -168,8 +273,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Pengu_Sprites_1: -799192805
-      Pengu_Sprites_0: 36105695
+      Pengu_Jumping_Sprites_2: -146104583
+      Pengu_Jumping_Sprites_4: 409673521
+      Pengu_Jumping_Sprites_1: -960064950
+      Pengu_Jumping_Sprites_5: -329904563
+      Pengu_Jumping_Sprites_6: 2114244216
+      Pengu_Jumping_Sprites_3: -550763972
+      Pengu_Jumping_Sprites_0: -497531510
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

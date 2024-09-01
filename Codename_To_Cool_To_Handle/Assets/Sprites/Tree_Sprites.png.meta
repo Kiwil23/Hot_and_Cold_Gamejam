@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: da5d252b91497984f86b916f05c43215
+guid: 97492ef1560eb8a4ebde4983251c523f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,43 +116,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pengu_Sprites_0
+      name: Tree_Sprites_0
       rect:
         serializedVersion: 2
-        x: 3
+        x: 1
         y: 0
-        width: 19
-        height: 24
+        width: 48
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de1e1a6043ea2c04794494a79e6617dd
-      internalID: 36105695
+      spriteID: 916363ef696b997439cfd2d3356f9d16
+      internalID: 832463751
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pengu_Sprites_1
+      name: Tree_Sprites_1
       rect:
         serializedVersion: 2
-        x: 28
+        x: 61
         y: 0
-        width: 21
-        height: 24
+        width: 48
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 081f1a0dc0de42c40992f0bf70e2fbdd
-      internalID: -799192805
+      spriteID: 7d30350c60cb1134680fee75565b5886
+      internalID: 1935687590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Sprites_2
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 1
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17262f195d51f1546b4e044954e0dade
+      internalID: -988782557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Sprites_3
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 0
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94bb0d59a321dd945ac6c8f45771fcd5
+      internalID: 1707158235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Sprites_4
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 0
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87585bfdc201d0c479738738b255288c
+      internalID: -565484996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Sprites_5
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b88d92c85f4fe949b1f81b8a30fe43c
+      internalID: 322618847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree_Sprites_6
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca0dbe5de56e7a4f851ec96fbacf882
+      internalID: 541866327
       vertices: []
       indices: 
       edges: []
@@ -168,8 +273,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Pengu_Sprites_1: -799192805
-      Pengu_Sprites_0: 36105695
+      Tree_Sprites_6: 541866327
+      Tree_Sprites_3: 1707158235
+      Tree_Sprites_0: 832463751
+      Tree_Sprites_1: 1935687590
+      Tree_Sprites_4: -565484996
+      Tree_Sprites_5: 322618847
+      Tree_Sprites_2: -988782557
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

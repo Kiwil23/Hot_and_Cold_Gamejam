@@ -6,6 +6,7 @@ public class PlayerAnimation : MonoBehaviour
 {
     private PlayerMovement m_PlayerMovement;
     private Animator m_Animator;
+   
    private void Awake()
     {
         m_PlayerMovement = GetComponent<PlayerMovement>();
@@ -15,12 +16,19 @@ public class PlayerAnimation : MonoBehaviour
    private void Update()
     {
         ChangeAnimation(m_PlayerMovement.getIsPlayerMoving());
+
     }
 
     private void ChangeAnimation(bool isMoving)
     {
-        if (m_PlayerMovement.CheckIsGrounded())  
-            m_Animator.SetBool("_walking", isMoving);          
-        
+        m_Animator.SetBool("_walking", isMoving);
+        if (m_PlayerMovement.getIsPlayerGrounded())
+        {          
+            m_Animator.SetBool("_jumping", false);
+        }
+        else
+        {
+            m_Animator.SetBool("_jumping", true);
+        }       
     }
 }

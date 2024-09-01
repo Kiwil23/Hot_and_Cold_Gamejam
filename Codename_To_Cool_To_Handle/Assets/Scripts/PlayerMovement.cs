@@ -9,7 +9,11 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheck;
     public LayerMask groundLayer;
 
-    [SerializeField] private float speed = 8f;
+    [SerializeField] private float Speed = 1f;
+    [SerializeField] private float maxSpeed = 8f;
+    [SerializeField] private float stoppAcceleration = 1f;
+
+
     [SerializeField] private float jumpingPower = 16f;
     private float horizontal;
     private bool isFacingRight = true;
@@ -18,10 +22,25 @@ public class PlayerMovement : MonoBehaviour
     {
         m_rigidbody = GetComponent<Rigidbody2D>();
     }
+    private void FixedUpdate()
+    {
+        if(m_rigidbody.velocity.x >= -maxSpeed && m_rigidbody.velocity.x <= maxSpeed)
+        {
+            m_rigidbody.AddForce(new Vector2(horizontal * Speed,0));
+        }
+        if(!getIsPlayerMoving())
+        {
+            if(m_rigidbody.velocity.x > 0 && m_rigidbody.velocity.x > 0.5)
+            m_rigidbody.velocity -= new Vector2(stoppAcceleration * Time.deltaTime,0);
+
+            if (m_rigidbody.velocity.x < 0 && m_rigidbody.velocity.x < -0.5)
+                m_rigidbody.velocity += new Vector2(stoppAcceleration * Time.deltaTime, 0);
+        }
+    }
+
     private void Update()
     {
-        m_rigidbody.velocity = new Vector2(horizontal * speed, m_rigidbody.velocity.y);
-
+        // Handle flipping the character based on movement direction
         if (!isFacingRight && horizontal > 0f)
         {
             Flip();
@@ -34,18 +53,18 @@ public class PlayerMovement : MonoBehaviour
 
     public void Jump(InputAction.CallbackContext contex)
     {
-        if (contex.performed && CheckIsGrounded())
+        if (contex.performed && getIsPlayerGrounded())
         {
             m_rigidbody.velocity = new Vector2(m_rigidbody.velocity.x, jumpingPower);
         }
 
-        if(contex.canceled && m_rigidbody.velocity.y > 0f)
+        if (contex.canceled && m_rigidbody.velocity.y > 0f)
         {
             m_rigidbody.velocity = new Vector2(m_rigidbody.velocity.x, m_rigidbody.velocity.y * 0.5f);
         }
     }
 
-    public bool CheckIsGrounded()
+    public bool getIsPlayerGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
@@ -65,13 +84,6 @@ public class PlayerMovement : MonoBehaviour
 
     public bool getIsPlayerMoving()
     {
-        if (horizontal > 0 || horizontal < 0)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return horizontal != 0f;
     }
 }
