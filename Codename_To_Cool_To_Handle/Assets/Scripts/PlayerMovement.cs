@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private bool CheckIsGrounded()
+    public bool CheckIsGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
@@ -61,5 +61,17 @@ public class PlayerMovement : MonoBehaviour
     public void Move(InputAction.CallbackContext context)
     {
         horizontal = context.ReadValue<Vector2>().x;
+    }
+
+    public bool getIsPlayerMoving()
+    {
+        if (horizontal > 0 || horizontal < 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
