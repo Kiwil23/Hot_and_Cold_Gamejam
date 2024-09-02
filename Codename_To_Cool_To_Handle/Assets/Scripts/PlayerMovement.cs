@@ -24,10 +24,11 @@ public class PlayerMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if(m_rigidbody.velocity.x >= -maxSpeed && m_rigidbody.velocity.x <= maxSpeed)
+        if(m_rigidbody.velocity.x > -maxSpeed && m_rigidbody.velocity.x < maxSpeed)
         {
             m_rigidbody.AddForce(new Vector2(horizontal * Speed,0));
         }
+
         if(!getIsPlayerMoving())
         {
             if(m_rigidbody.velocity.x > 0 && m_rigidbody.velocity.x > 0.5)
@@ -66,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
 
     public bool getIsPlayerGrounded()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        return Physics2D.OverlapCircle(groundCheck.position, 0.3f, groundLayer);
     }
 
     private void Flip()
@@ -85,5 +86,15 @@ public class PlayerMovement : MonoBehaviour
     public bool getIsPlayerMoving()
     {
         return horizontal != 0f;
+    }
+
+    public float getPlayerDirection()
+    {
+        return horizontal;
+    }
+
+    public float getVelocity()
+    {
+        return m_rigidbody.velocity.x;
     }
 }

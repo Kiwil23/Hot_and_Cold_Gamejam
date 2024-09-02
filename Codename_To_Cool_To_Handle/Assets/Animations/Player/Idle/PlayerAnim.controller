@@ -42,9 +42,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.06378439
+  m_TransitionDuration: 0.02273299
   m_TransitionOffset: 0
-  m_ExitTime: 7.914918e-10
+  m_ExitTime: 0.0000000016815087
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -98,9 +98,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.068722025
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
-  m_ExitTime: 0
+  m_ExitTime: 2.0801619e-10
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -114,7 +114,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlayerJump
-  m_Speed: 0.53
+  m_Speed: 0.78
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 4316099531380225191}
@@ -151,9 +151,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.29215458
   m_TransitionOffset: 0
-  m_ExitTime: 0
+  m_ExitTime: 3.600278e-10
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -179,9 +179,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.051431816
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
-  m_ExitTime: 6.0004654e-11
+  m_ExitTime: 6.797673e-10
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -260,6 +260,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: _jumping
     m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: _walking
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 8302856154469843345}
   m_Solo: 0
@@ -282,7 +285,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlayerIdleJump
-  m_Speed: 0.16
+  m_Speed: 0.28
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 5868585526182749875}
@@ -302,34 +305,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1101 &5398029158695002565
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: _jumping
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: _walking
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -3901746090538658108}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0
-  m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
 --- !u!1101 &5868585526182749875
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -363,7 +338,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlayerWalkRight
-  m_Speed: 0.3
+  m_Speed: 0.52
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -8679071054871670946}
@@ -395,7 +370,6 @@ AnimatorState:
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -2743336117503039530}
-  - {fileID: 5398029158695002565}
   - {fileID: 4123029408456037039}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}

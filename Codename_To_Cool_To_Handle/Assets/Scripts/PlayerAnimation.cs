@@ -16,7 +16,6 @@ public class PlayerAnimation : MonoBehaviour
    private void Update()
     {
         ChangeAnimation(m_PlayerMovement.getIsPlayerMoving());
-
     }
 
     private void ChangeAnimation(bool isMoving)

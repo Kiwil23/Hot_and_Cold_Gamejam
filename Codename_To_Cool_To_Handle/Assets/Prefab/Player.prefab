@@ -251,7 +251,9 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  speed: 8
+  Speed: 1
+  maxSpeed: 8
+  stoppAcceleration: 8
   jumpingPower: 12
 --- !u!114 &1636023738631163170
 MonoBehaviour:
