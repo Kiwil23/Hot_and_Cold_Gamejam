@@ -6,6 +6,7 @@ TagManager:
   tags:
   - stone
   - snow
+  - hostileEnviroment
   layers:
   - Default
   - TransparentFX

@@ -25,16 +25,16 @@ public class CameraMovement : MonoBehaviour
     {
         CamPos = new Vector3(this.transform.position.x,this.transform.position.y,transform.position.z);
 
-            if (playerMovement.getPlayerDirection() > 0 || playerMovement.getVelocity() > 0)
+            if (playerMovement.getPlayerDirection() > 0 || playerMovement.getVelocity().x > 0)
             {
                 m_newPos = new Vector3(cameraTarget.position.x + xOffsetR, yOffset, -10f);
-                transform.position = Vector3.Lerp(CamPos, m_newPos, playerMovement.getVelocity() / lookAheadDragR * Time.deltaTime);
+                transform.position = Vector3.Lerp(CamPos, m_newPos, playerMovement.getVelocity().x / lookAheadDragR * Time.deltaTime);
             }
 
-            if (playerMovement.getPlayerDirection() < 0 || playerMovement.getVelocity() < 0)
+            if (playerMovement.getPlayerDirection() < 0 || playerMovement.getVelocity().x < 0)
             {
                 m_newPos = new Vector3(cameraTarget.position.x - xOffsetL, yOffset, -10f);
-                transform.position = Vector3.Lerp(CamPos, m_newPos, -playerMovement.getVelocity() / lookAheadDragL * Time.deltaTime);
+                transform.position = Vector3.Lerp(CamPos, m_newPos, -playerMovement.getVelocity().x / lookAheadDragL * Time.deltaTime);
             }
 
             if (playerMovement.getPlayerDirection() == 0)

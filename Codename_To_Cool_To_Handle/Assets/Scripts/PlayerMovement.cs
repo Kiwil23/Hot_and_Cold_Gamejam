@@ -97,8 +97,8 @@ public class PlayerMovement : MonoBehaviour
         return horizontal;
     }
 
-    public float getVelocity()
+    public Vector2 getVelocity()
     {
-        return m_rigidbody.velocity.x;
+        return m_rigidbody.velocity;
     }
 }
