@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     private float horizontal;
     private bool isFacingRight = true;
 
+    [SerializeField] private PlayerSounds playerSounds;
+
     private void Awake()
     {
         m_rigidbody = GetComponent<Rigidbody2D>();
@@ -57,12 +59,14 @@ public class PlayerMovement : MonoBehaviour
         if (contex.performed && getIsPlayerGrounded())
         {
             m_rigidbody.velocity = new Vector2(m_rigidbody.velocity.x, jumpingPower);
+            playerSounds.playJump();
         }
 
         if (contex.canceled && m_rigidbody.velocity.y > 0f)
         {
             m_rigidbody.velocity = new Vector2(m_rigidbody.velocity.x, m_rigidbody.velocity.y * 0.5f);
         }
+
     }
 
     public bool getIsPlayerGrounded()

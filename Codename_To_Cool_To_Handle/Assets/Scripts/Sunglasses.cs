@@ -19,6 +19,7 @@ public class Sunglasses : MonoBehaviour
     [SerializeField] private SpriteRenderer sparkelsD;
     private Color tempColor;
     private float sparkelsAlpha = 1f;
+    [SerializeField] AudioSource holySound;
 
     private void Start()
     {
@@ -45,9 +46,10 @@ public class Sunglasses : MonoBehaviour
             sparkelsB.color = tempColor;
             sparkelsC.color = tempColor;
             sparkelsD.color = tempColor;
+            spotLight.gameObject.transform.position = new Vector3(m_PlayerPos.x, spotLight.gameObject.transform.position.y, spotLight.gameObject.transform.position.z);
         }
-     
     }
+       
 
     private float CalculateObjDistance(GameObject objPos)
     {
@@ -63,11 +65,12 @@ public class Sunglasses : MonoBehaviour
             sunglasses.transform.LeanScale(new Vector3(2f, 2f, 0), 2f).setEaseOutQuad();
             sunglasses.LeanMove(new Vector3(m_PlayerPos.x, m_PlayerPos.y+ 5f, m_PlayerPos.z), 2f).setEaseInOutQuart().setOnComplete(GrabAnimation);
 
-            spotLight.gameObject.transform.position = new Vector3(m_PlayerPos.x,spotLight.gameObject.transform.position.y,spotLight.gameObject.transform.position.z);
+            //spotLight.gameObject.transform.position = new Vector3(m_PlayerPos.x,spotLight.gameObject.transform.position.y,spotLight.gameObject.transform.position.z);
             spotLight.gameObject.SetActive(true);
 
             LeanTween.value(1, 0.2f, 2f).setOnUpdate( (float val) => { globalLight.intensity = val; });
             LeanTween.value(0, 1f, 2f).setOnUpdate((float val) => { spotLight.intensity = val; });
+            holySound.Play();
         }
     }
 
