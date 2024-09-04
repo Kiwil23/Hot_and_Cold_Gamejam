@@ -7,19 +7,21 @@ public class PlayerSounds : MonoBehaviour
 {
     [SerializeField] private AudioSource stepsSource;
     [SerializeField] private AudioSource jumpSource;
+    [SerializeField] private AudioSource DMGSource;
     [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private float snowStepsPitchControll = 1f;
     [SerializeField] private AudioClip snowSteps;
     [SerializeField] private AudioClip stoneSteps;
     [SerializeField] private GroundChecker groundChecker;
+    [SerializeField] private List<AudioClip> dmg_Sounds;
     private string currentGround = " ";
 
     private void Update()
     {
         if (playerMovement.getIsPlayerMoving() && playerMovement.getIsPlayerGrounded())
         {
-            if(stepsSource.volume <= 0.6f)
-            stepsSource.volume += 0.1f * (Time.deltaTime * 40f);
+            if (stepsSource.volume <= 0.8f)
+                stepsSource.volume += 0.1f * (Time.deltaTime * 40f);
         }
         else
         {
@@ -33,22 +35,22 @@ public class PlayerSounds : MonoBehaviour
         {
             currentGround = groundChecker.getCollisionTag();
             stepsSource.clip = stoneSteps;
-            playNewSteps();
-          
-     
+            PlayNewSteps();
+
+
         }
-        else if(groundChecker.getCollisionTag() == "snow" && getIsGroundChange())
+        else if (groundChecker.getCollisionTag() == "snow" && getIsGroundChange())
         {
 
             currentGround = groundChecker.getCollisionTag();
             stepsSource.clip = snowSteps;
-            playNewSteps();
+            PlayNewSteps();
         }
     }
 
-  private void playNewSteps()
-    {     
-            stepsSource.Play();       
+    private void PlayNewSteps()
+    {
+        stepsSource.Play();
     }
 
     private bool getIsGroundChange()
@@ -60,8 +62,15 @@ public class PlayerSounds : MonoBehaviour
         else { return false; }
     }
 
-    public void playJump()
+    public void PlayJump()
     {
         jumpSource.Play();
+    }
+
+    public void PlayDMGSound()
+    {
+        int randNumTemp = UnityEngine.Random.Range(0, 2);
+        DMGSource.clip = dmg_Sounds[randNumTemp];
+        DMGSource.Play();
     }
 }

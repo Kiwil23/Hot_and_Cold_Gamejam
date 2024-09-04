@@ -1,18 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Sunglasses : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private bool isGlassesHolder = false;
+    [SerializeField] private GameObject sun;
+    private bool isSunOut;
+   private void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+   private void Update()
     {
         
+    }
+
+    public void setGlassesHolder(bool isHolder)
+    {
+        isGlassesHolder = isHolder;
+    }
+
+    public void HeatUp(InputAction.CallbackContext context)
+    {
+       if(isGlassesHolder)
+        {
+            isSunOut = context.performed;
+        }
+
+       if(isSunOut)
+        {
+            sun.SetActive(true);
+        }
+       else
+        {
+            sun.SetActive(false);
+        }
     }
 }

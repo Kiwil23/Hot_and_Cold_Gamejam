@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    private int health = 100;
+    private int health = 1000;
     private bool isInvincible = false;
     [SerializeField] private float invincibilityTime = 2f;
     private float invincibilityTimer = 0f;
@@ -15,6 +15,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private Vector2 playerBounce;
     [SerializeField] private float blinkIntervall = 1f;
+    [SerializeField] private PlayerSounds playerSounds;
     private float blinkTimer = 0f;
 
     private void Update()
@@ -54,6 +55,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (other.gameObject.tag == "hostileEnviroment" && !isInvincible)
         {
+            playerSounds.PlayDMGSound();
             health -= icicleDmg;
             isInvincible = true;
             Vector2 temp = new Vector2(playerBounce.x * playerMovement.getPlayerDirection(), playerBounce.y);

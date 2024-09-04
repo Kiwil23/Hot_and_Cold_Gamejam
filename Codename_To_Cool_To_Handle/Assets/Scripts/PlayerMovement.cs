@@ -59,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
         if (contex.performed && getIsPlayerGrounded())
         {
             m_rigidbody.velocity = new Vector2(m_rigidbody.velocity.x, jumpingPower);
-            playerSounds.playJump();
+            playerSounds.PlayJump();
         }
 
         if (contex.canceled && m_rigidbody.velocity.y > 0f)
