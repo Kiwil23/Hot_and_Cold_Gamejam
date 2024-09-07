@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D m_rigidbody;
     public Transform groundCheck;
     public LayerMask groundLayer;
+    public LayerMask elevatetlayer;
 
     [SerializeField] private float Speed = 1f;
     [SerializeField] private float maxSpeed = 8f;
@@ -72,6 +73,11 @@ public class PlayerMovement : MonoBehaviour
     public bool getIsPlayerGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.3f, groundLayer);
+    }
+
+    public bool getIsPlayerElevatet()
+    {
+        return Physics2D.OverlapCircle(groundCheck.position, 0.3f, elevatetlayer);
     }
 
     private void Flip()

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.UI;
 
 public class SunglassesGraber : MonoBehaviour
 {
@@ -20,6 +21,9 @@ public class SunglassesGraber : MonoBehaviour
     private Color tempColor;
     private float sparkelsAlpha = 1f;
     [SerializeField] AudioSource holySound;
+    [SerializeField] GameObject glassesIcon;
+
+    private bool isGrabed = false;
 
     private void Start()
     {
@@ -48,6 +52,12 @@ public class SunglassesGraber : MonoBehaviour
             sparkelsD.color = tempColor;
             spotLight.gameObject.transform.position = new Vector3(m_PlayerPos.x, spotLight.gameObject.transform.position.y, spotLight.gameObject.transform.position.z);
         }
+        
+        if(isGrabed)
+        {
+            glassesIcon.SetActive(true);   
+           
+        }
     }
        
 
@@ -71,6 +81,8 @@ public class SunglassesGraber : MonoBehaviour
             LeanTween.value(1, 0.2f, 2f).setOnUpdate( (float val) => { globalLight.intensity = val; });
             LeanTween.value(0, 1f, 2f).setOnUpdate((float val) => { spotLight.intensity = val; });
             holySound.Play();
+            isGrabed = true;
+            Invoke("glassesAnimationStart", 5.2f);
         }
     }
 
@@ -98,5 +110,14 @@ public class SunglassesGraber : MonoBehaviour
         Destroy(spotLight.gameObject);
         Destroy(sunglassesObj);
         this.gameObject.GetComponent<PlayerInput>().enabled = true;
+    }
+
+    private void glassesAnimationStart()
+    {
+        glassesIcon.LeanScale(new Vector3(1.2f, 1.2f, 1.2f), .5f).setOnComplete(glassesIconAnimation);
+    }
+    private void glassesIconAnimation()
+    {
+        glassesIcon.LeanScale(Vector3.one, .3f).setEaseInQuart();
     }
 }

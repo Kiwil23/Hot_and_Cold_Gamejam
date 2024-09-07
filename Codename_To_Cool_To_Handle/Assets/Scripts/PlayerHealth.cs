@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    private int health = 1000;
+    private int health = 100;
     private bool isInvincible = false;
     [SerializeField] private float invincibilityTime = 2f;
     private float invincibilityTimer = 0f;
@@ -27,11 +27,6 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        IciclePierce(other);
-    }
-
     private void CharacterBlink(float time)
     {
         blinkTimer += time;
@@ -51,9 +46,9 @@ public class PlayerHealth : MonoBehaviour
        }
     }
 
-    private void IciclePierce(Collider2D other)
+    public void SpikePierce()
     {
-        if (other.gameObject.tag == "hostileEnviroment" && !isInvincible)
+        if (!isInvincible)
         {
             playerSounds.PlayDMGSound();
             health -= icicleDmg;
