@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1629525615
+--- !u!1 &642981206136417194
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1629525618}
-  - component: {fileID: 1629525617}
-  - component: {fileID: 1629525616}
+  - component: {fileID: 642981206136417207}
+  - component: {fileID: 642981206136417204}
+  - component: {fileID: 642981206136417205}
   m_Layer: 0
   m_Name: Eiswand_Sprites_ohne_schmelze_0
   m_TagString: Untagged
@@ -18,28 +18,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1629525618
+--- !u!4 &642981206136417207
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1629525615}
+  m_GameObject: {fileID: 642981206136417194}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.083, y: 0.332, z: 0}
+  m_LocalPosition: {x: -0.08300018, y: 0.33199978, z: 0}
   m_LocalScale: {x: 1.0065, y: 1.0164, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2941405429423316662}
-  m_RootOrder: 1
+  m_Father: {fileID: 7989331909169296627}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1629525617
+--- !u!212 &642981206136417204
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1629525615}
+  m_GameObject: {fileID: 642981206136417194}
   m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -85,14 +85,14 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &1629525616
+--- !u!95 &642981206136417205
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1629525615}
+  m_GameObject: {fileID: 642981206136417194}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: ec9e4506acfb2244ab330efabfe376a5, type: 2}
@@ -105,7 +105,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1 &2941405429423316661
+--- !u!1 &2323202816405758832
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -113,42 +113,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2941405429423316662}
-  - component: {fileID: 2941405429423316663}
-  - component: {fileID: 1487088818}
-  - component: {fileID: 1487088819}
-  - component: {fileID: 1487088817}
+  - component: {fileID: 2323202816405758835}
+  - component: {fileID: 2323202816405758834}
+  - component: {fileID: 642981206530511223}
+  - component: {fileID: 642981206530511222}
+  - component: {fileID: 642981206530511220}
   m_Layer: 7
-  m_Name: IceWall
+  m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2941405429423316662
+--- !u!4 &2323202816405758835
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2941405429423316661}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.914001, y: 3.09, z: 0}
+  m_GameObject: {fileID: 2323202816405758832}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6895966910373788090}
-  - {fileID: 1629525618}
-  m_Father: {fileID: 0}
+  m_Children: []
+  m_Father: {fileID: 7989331909169296627}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &2941405429423316663
+--- !u!61 &2323202816405758834
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2941405429423316661}
+  m_GameObject: {fileID: 2323202816405758832}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -168,14 +166,14 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.28385925, y: 5.1478167}
   m_EdgeRadius: 0
---- !u!50 &1487088818
+--- !u!50 &642981206530511223
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2941405429423316661}
+  m_GameObject: {fileID: 2323202816405758832}
   m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -189,13 +187,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &1487088819
+--- !u!61 &642981206530511222
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2941405429423316661}
+  m_GameObject: {fileID: 2323202816405758832}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -215,24 +213,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.29129028, y: 5.1478167}
   m_EdgeRadius: 0
---- !u!114 &1487088817
+--- !u!114 &642981206530511220
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2941405429423316661}
+  m_GameObject: {fileID: 2323202816405758832}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fc05458d5bae7f458d11dcc401bd9b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   meltingTime: 7
-  animator: {fileID: 1629525616}
-  realObj: {fileID: 5660287213755274170}
-  fakeObj: {fileID: 1629525617}
+  m_animator: {fileID: 8223797923230495532}
+  animator: {fileID: 642981206136417205}
+  realObj: {fileID: 5071393184168439423}
+  fakeObj: {fileID: 642981206136417204}
   animatorSpeed: 0.8
---- !u!1 &3172564189480140631
+  yPos: -5.12
+--- !u!1 &2660328110044824210
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -240,9 +240,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6895966910373788090}
-  - component: {fileID: 5660287213755274170}
-  - component: {fileID: 8848615197122514665}
+  - component: {fileID: 6295805084681798783}
+  - component: {fileID: 5071393184168439423}
+  - component: {fileID: 8223797923230495532}
   m_Layer: 0
   m_Name: Eiswand_Sprites_0
   m_TagString: Untagged
@@ -250,28 +250,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6895966910373788090
+--- !u!4 &6295805084681798783
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3172564189480140631}
+  m_GameObject: {fileID: 2660328110044824210}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.083, y: 0.332, z: 0}
+  m_LocalPosition: {x: -0.08300018, y: 0.33199978, z: 0}
   m_LocalScale: {x: 1.0065, y: 1.0164, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2941405429423316662}
-  m_RootOrder: 0
+  m_Father: {fileID: 7989331909169296627}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &5660287213755274170
+--- !u!212 &5071393184168439423
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3172564189480140631}
+  m_GameObject: {fileID: 2660328110044824210}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -317,14 +317,14 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &8848615197122514665
+--- !u!95 &8223797923230495532
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3172564189480140631}
+  m_GameObject: {fileID: 2660328110044824210}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: de12f2c836f95aa43b256c629ae2618f, type: 2}
@@ -337,3 +337,37 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &7989331909169296624
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7989331909169296627}
+  m_Layer: 7
+  m_Name: IceWall 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7989331909169296627
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7989331909169296624}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 49.869, y: 3.09, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2323202816405758835}
+  - {fileID: 6295805084681798783}
+  - {fileID: 642981206136417207}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

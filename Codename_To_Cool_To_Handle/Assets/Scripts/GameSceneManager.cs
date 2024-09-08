@@ -8,4 +8,5 @@ public class GameSceneManager : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
+
 }

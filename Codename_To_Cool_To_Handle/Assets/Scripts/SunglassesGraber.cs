@@ -114,7 +114,7 @@ public class SunglassesGraber : MonoBehaviour
 
     private void glassesAnimationStart()
     {
-        glassesIcon.LeanScale(new Vector3(1.2f, 1.2f, 1.2f), .5f).setOnComplete(glassesIconAnimation);
+        glassesIcon.LeanScale(new Vector3(1.2f, 1.2f, 1.2f), .7f).setOnComplete(glassesIconAnimation);
     }
     private void glassesIconAnimation()
     {

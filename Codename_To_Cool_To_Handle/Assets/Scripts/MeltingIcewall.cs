@@ -5,21 +5,23 @@ using UnityEngine;
 public class MeltingIcewall : MonoBehaviour
 {
     [SerializeField] private float meltingTime = 3f;
-    private Animator m_animator;
+    [SerializeField] private Animator m_animator;
     [SerializeField] private Animator animator;
     [SerializeField] private SpriteRenderer realObj;
     [SerializeField] private SpriteRenderer fakeObj;
     [SerializeField] private float animatorSpeed;
+    [SerializeField] private float yPos;
+    private bool isMelting = false;
 
     private void Start()
     {
-        m_animator = this.transform.GetChild(0).GetComponent<Animator>();
+     
         m_animator.speed = 0;
         animator.speed = 0;
     }
     private void Update()
     {
-       
+        MoveCollider();
     }
     public void OnTriggerStay2D(Collider2D other)
     {
@@ -30,6 +32,7 @@ public class MeltingIcewall : MonoBehaviour
             animator.speed = animatorSpeed;
             realObj.enabled = true;
             fakeObj.enabled = false;
+            isMelting = true;
         }
 
         MeltIce();
@@ -43,6 +46,7 @@ public class MeltingIcewall : MonoBehaviour
             animator.speed = 0;
             realObj.enabled = false;
             fakeObj.enabled = true;
+            isMelting = false;
         }
     }
 
@@ -50,7 +54,15 @@ public class MeltingIcewall : MonoBehaviour
     {
         if (meltingTime < 0)
         {
-            Destroy(this.gameObject);
+            Destroy(this.gameObject.transform.parent.gameObject);
         }
+    }
+
+    private void MoveCollider()
+    {
+        if( isMelting)
+        {
+            transform.Translate(new Vector3(0, (7.1f/yPos) *Time.deltaTime, 0));
+        }      
     }
 }
