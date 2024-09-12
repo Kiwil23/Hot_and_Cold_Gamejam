@@ -23,6 +23,7 @@ public class Sunglasses : MonoBehaviour
     [SerializeField] private float lightOuterRadius = 4.77f;
     [SerializeField] private Image glassesIcon;
     [SerializeField] private List<Sprite> sprites;
+    [SerializeField] private AudioSource sunAudioSource;
 
     public void setGlassesHolder(bool isHolder)
     {
@@ -42,7 +43,10 @@ public class Sunglasses : MonoBehaviour
                 
 
             }
-
+            if(!sunAudioSource.isPlaying)
+            {
+                sunAudioSource.Play();
+            }
         }
         else
         {
@@ -53,7 +57,8 @@ public class Sunglasses : MonoBehaviour
                 scale.y -= scaleFactorOff * Time.deltaTime;
                 scale.z -= scaleFactorOff * Time.deltaTime;
                 isLimitReached = false;
-            }         
+            }
+            sunAudioSource.Stop();
         }
 
         light2D.pointLightOuterRadius = (scale.x * lightOuterRadius)/maxScale.x;

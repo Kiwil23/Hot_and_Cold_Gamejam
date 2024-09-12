@@ -123,9 +123,9 @@ TextureImporter:
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 12, w: 10}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -144,9 +144,9 @@ TextureImporter:
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 12, w: 12}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -165,9 +165,9 @@ TextureImporter:
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 12, w: 15}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -186,9 +186,9 @@ TextureImporter:
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 12, w: 20}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -207,9 +207,9 @@ TextureImporter:
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 12, w: 24}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -228,9 +228,9 @@ TextureImporter:
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 12, w: 26}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -249,9 +249,9 @@ TextureImporter:
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 12, w: 30}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -270,9 +270,9 @@ TextureImporter:
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 12, w: 33}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -291,9 +291,9 @@ TextureImporter:
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 12, w: 41}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -312,9 +312,9 @@ TextureImporter:
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 12, w: 47}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -333,9 +333,9 @@ TextureImporter:
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 12, y: 0, z: 13, w: 58}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -354,9 +354,9 @@ TextureImporter:
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 12, w: 70}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -375,9 +375,9 @@ TextureImporter:
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 12, w: 76}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -396,9 +396,9 @@ TextureImporter:
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 12, w: 82}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -417,9 +417,9 @@ TextureImporter:
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 12, w: 92}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -434,13 +434,13 @@ TextureImporter:
       name: Eiswand_Sprites_ohne_schmelze_15
       rect:
         serializedVersion: 2
-        x: 790
+        x: 789
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 12, w: 103}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -459,9 +459,9 @@ TextureImporter:
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 12, w: 97}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -480,9 +480,9 @@ TextureImporter:
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 12, w: 101}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -497,13 +497,13 @@ TextureImporter:
       name: Eiswand_Sprites_ohne_schmelze_18
       rect:
         serializedVersion: 2
-        x: 836
+        x: 839
         y: 0
-        width: 31
+        width: 25
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 10, y: 0, z: 9, w: 106}
       outline: []
       physicsShape: []
       tessellationDetail: 0

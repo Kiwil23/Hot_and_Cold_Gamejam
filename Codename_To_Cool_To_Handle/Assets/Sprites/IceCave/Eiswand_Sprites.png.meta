@@ -123,9 +123,9 @@ TextureImporter:
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 13, w: 10}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -144,9 +144,9 @@ TextureImporter:
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 12, w: 12}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -161,13 +161,13 @@ TextureImporter:
       name: Eiswand_Sprites_2
       rect:
         serializedVersion: 2
-        x: 99
+        x: 98
         y: 0
-        width: 31
+        width: 33
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 15, y: 0, z: 13, w: 15}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -186,9 +186,9 @@ TextureImporter:
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 12, w: 18}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -203,13 +203,13 @@ TextureImporter:
       name: Eiswand_Sprites_4
       rect:
         serializedVersion: 2
-        x: 191
+        x: 190
         y: 0
-        width: 31
+        width: 33
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 14, y: 0, z: 13, w: 20}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -228,9 +228,9 @@ TextureImporter:
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 12, w: 25}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -245,13 +245,13 @@ TextureImporter:
       name: Eiswand_Sprites_6
       rect:
         serializedVersion: 2
-        x: 283
+        x: 282
         y: 0
-        width: 31
+        width: 33
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 14, y: 0, z: 13, w: 28}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -266,13 +266,13 @@ TextureImporter:
       name: Eiswand_Sprites_7
       rect:
         serializedVersion: 2
-        x: 329
+        x: 328
         y: 0
-        width: 31
+        width: 33
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 14, y: 0, z: 13, w: 32}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -287,13 +287,13 @@ TextureImporter:
       name: Eiswand_Sprites_8
       rect:
         serializedVersion: 2
-        x: 375
+        x: 374
         y: 0
-        width: 31
+        width: 33
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 14, y: 0, z: 13, w: 39}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -308,13 +308,13 @@ TextureImporter:
       name: Eiswand_Sprites_9
       rect:
         serializedVersion: 2
-        x: 421
+        x: 420
         y: 0
-        width: 31
+        width: 33
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 14, y: 0, z: 13, w: 45}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -329,13 +329,13 @@ TextureImporter:
       name: Eiswand_Sprites_10
       rect:
         serializedVersion: 2
-        x: 467
+        x: 466
         y: 0
-        width: 31
+        width: 33
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 14, y: 0, z: 13, w: 54}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -354,9 +354,9 @@ TextureImporter:
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 12, w: 65}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -375,9 +375,9 @@ TextureImporter:
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 12, w: 73}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -396,9 +396,9 @@ TextureImporter:
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 12, w: 79}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -413,13 +413,13 @@ TextureImporter:
       name: Eiswand_Sprites_14
       rect:
         serializedVersion: 2
-        x: 651
+        x: 650
         y: 0
-        width: 31
+        width: 33
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 14, y: 0, z: 13, w: 88}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -438,9 +438,9 @@ TextureImporter:
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 12, w: 93}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -455,13 +455,13 @@ TextureImporter:
       name: Eiswand_Sprites_16
       rect:
         serializedVersion: 2
-        x: 789
+        x: 790
         y: 0
-        width: 31
+        width: 32
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 13, w: 103}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -480,9 +480,9 @@ TextureImporter:
         y: 0
         width: 31
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 13, y: 0, z: 13, w: 99}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -499,11 +499,11 @@ TextureImporter:
         serializedVersion: 2
         x: 835
         y: 0
-        width: 31
+        width: 34
         height: 110
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 14, y: 0, z: 14, w: 107}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -525,25 +525,25 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Eiswand_Sprites_3: 764501521
-      Eiswand_Sprites_15: 557065455
-      Eiswand_Sprites_7: 868399677
-      Eiswand_Sprites_9: -1856843236
-      Eiswand_Sprites_18: -1595021442
-      Eiswand_Sprites_13: 717327450
-      Eiswand_Sprites_0: 546207046
-      Eiswand_Sprites_1: -1319759258
-      Eiswand_Sprites_10: 74418827
-      Eiswand_Sprites_14: 893678652
-      Eiswand_Sprites_11: -2015681580
-      Eiswand_Sprites_4: -972355401
+      Eiswand_Sprites_3: 546207046
+      Eiswand_Sprites_15: -1319759258
+      Eiswand_Sprites_7: 395536015
+      Eiswand_Sprites_9: 764501521
+      Eiswand_Sprites_18: -972355401
+      Eiswand_Sprites_13: -511906013
+      Eiswand_Sprites_0: -85873082
+      Eiswand_Sprites_1: 868399677
+      Eiswand_Sprites_10: -219003223
+      Eiswand_Sprites_14: -1856843236
+      Eiswand_Sprites_11: 74418827
+      Eiswand_Sprites_4: -2015681580
       Eiswand_Sprites_12: -1112677970
-      Eiswand_Sprites_2: 395536015
-      Eiswand_Sprites_16: -453536911
-      Eiswand_Sprites_17: 1767979557
-      Eiswand_Sprites_5: -511906013
-      Eiswand_Sprites_8: -219003223
-      Eiswand_Sprites_6: -85873082
+      Eiswand_Sprites_2: 717327450
+      Eiswand_Sprites_16: 893678652
+      Eiswand_Sprites_17: 557065455
+      Eiswand_Sprites_5: -453536911
+      Eiswand_Sprites_8: 1767979557
+      Eiswand_Sprites_6: -1595021442
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

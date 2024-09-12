@@ -9,9 +9,12 @@ public class MeltingIcewall : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private SpriteRenderer realObj;
     [SerializeField] private SpriteRenderer fakeObj;
+    [SerializeField] private Collider2D realCol;
+    [SerializeField] private Collider2D fakeCol;
     [SerializeField] private float animatorSpeed;
     [SerializeField] private float yPos;
     private bool isMelting = false;
+    [SerializeField] private float colliderSpeed;
 
     private void Start()
     {
@@ -31,7 +34,9 @@ public class MeltingIcewall : MonoBehaviour
             m_animator.speed = animatorSpeed;
             animator.speed = animatorSpeed;
             realObj.enabled = true;
+            realCol.enabled = true;
             fakeObj.enabled = false;
+            fakeCol.enabled = false;
             isMelting = true;
         }
 
@@ -45,7 +50,9 @@ public class MeltingIcewall : MonoBehaviour
             m_animator.speed = 0;
             animator.speed = 0;
             realObj.enabled = false;
+            realCol.enabled = false;
             fakeObj.enabled = true;
+            fakeCol.enabled = true;
             isMelting = false;
         }
     }
@@ -62,7 +69,7 @@ public class MeltingIcewall : MonoBehaviour
     {
         if( isMelting)
         {
-            transform.Translate(new Vector3(0, (7.1f/yPos) *Time.deltaTime, 0));
+            transform.Translate(new Vector3(0, (colliderSpeed/yPos) *Time.deltaTime, 0));
         }      
     }
 }

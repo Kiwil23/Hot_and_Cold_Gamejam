@@ -14,6 +14,8 @@ public class Iceicle : MonoBehaviour
     private Collider2D[] colList;
     [SerializeField] private PlayerHealth playerHealth;
     private bool isPierced = false;
+    [SerializeField] private Shake iceicle;
+    [SerializeField] private AudioSource audioSource;
     private void Start()
     {
         colList = GetComponentsInChildren<Collider2D>();
@@ -24,10 +26,11 @@ public class Iceicle : MonoBehaviour
 
    private void Update()
     {
-        if(this.gameObject.transform.localPosition.y < stopPosition.y)
+        if(this.gameObject.transform.localPosition.y < stopPosition.y && !isPierced)
         {
             m_rigidbody2D.isKinematic = true;
             m_rigidbody2D.velocity = new Vector2(0, 0);
+            audioSource.Play();
             isPierced = true;
         }
     }
@@ -37,6 +40,8 @@ public class Iceicle : MonoBehaviour
         if (other.gameObject.tag == "sun")
         {
             meltingTime -= Time.deltaTime;
+            if (iceicle)
+                iceicle.enabled = true;
             //m_animator.speed = animatorSpeed;
         }
         if(icicleToDestroy != null)
@@ -45,6 +50,11 @@ public class Iceicle : MonoBehaviour
         }
     }
 
+    public void OnTriggerExit2D(Collider2D other)
+    {
+        if(iceicle)
+        iceicle.enabled = false;
+    }
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player" && !isPierced)
@@ -58,8 +68,10 @@ public class Iceicle : MonoBehaviour
         if (meltingTime < 0)
         {            
                 m_rigidbody2D.isKinematic = false;
-                Destroy(icicleToDestroy);
+            iceicle.KillObj();   
+            Destroy(icicleToDestroy);
             Destroy(colList[0]);
+
 
         }
     }
